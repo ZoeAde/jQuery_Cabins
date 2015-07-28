@@ -31,8 +31,30 @@ $(document).ready(function() {
   // $('.low').on("click", function(){
 
   // });
-$.each('.home', function(){
-  $('.home').data('price');
-});
+
+var homeArray = $('.home');
+
+
+
+
+// function sort(array) {
+//   var newArray = [];
+//   for (var i = 0; i < array.length; i++) {
+//     if (parseInt(array[i].dataset.price) < parseInt(array[i + 1].dataset.price)) {
+//       console.log(parseInt(array[i + 1].dataset.price));
+//       newArray.push(array[i]);
+//     }
+//     else {
+//       console.log(parseInt(array[i].dataset.price));
+//       newArray.push(array[i+1]);
+//     }
+//   }
+//   return newArray;
+// }
+
+
+
+
+
 
 });
