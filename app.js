@@ -32,9 +32,28 @@ $(document).ready(function() {
 
   // });
 
-var homeArray = $('.home');
+var homeArray = $('.home').slice();
+var homeLow = [];
+homeArray.sort(function(a, b){
 
+var aHome = parseInt(a.getAttribute("data-price"));
+console.log(aHome);
+var bHome = parseInt(b.getAttribute("data-price"));
+console.log(bHome);
 
+  if (aHome < bHome) {
+    console.log("round1");
+    return a;
+  }
+  else if (bHome < aHome){
+    console.log("round2");
+    return b;
+  }
+  else {
+    console.log("round3");
+    return a, b;
+  }
+});
 
 
 // function sort(array) {
@@ -57,4 +76,4 @@ var homeArray = $('.home');
 
 
 
-});
+
